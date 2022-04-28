@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery</title>
+
+		<script src="jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		
+		<input class="exemplo1" type="text" name="" placeholder="input 1" />
+		<input type="text" name="" placeholder="input 2" />
+		<input type="text" name="" placeholder="input 3" />
+
+		<div class="lista1">
+			<div class="exemplo1">div 1</div>
+			<div>div 2</div>
+			<div>div 3</div>
+		</div>
+
+		<ul class="lista1">
+			<li class="exemplo1">opção 1</li>
+			<li class="exemplo2">opção 2</li>
+			<li class="exemplo2">opção 3</li>
+		</ul>
+
+		<ul class="lista2">
+			<li class="exemplo2">opção 1</li>
+			<li class="exemplo2">opção 2</li>
+			<li>opção 3</li>
+		</ul>
+
+
+	</body>
+
+	<script>
+
+		//combinaão de seletores
+		
+		//selecionar elementos por classe de tag específica
+		console.log($('li.exemplo1'))
+
+		//selecionar elementos por classe de classe específica
+		console.log($('.lista1 li.exemplo2'))
+
+		//atuação sobre o array de retorno dos elementos selecionados
+		console.log($('.lista1 .exemplo2:first'))//seleciona o primeiro elemento de uma seleção
+		console.log($('.lista1 li.exemplo2:last'))//seleciona o último elemento de uma seleção
+		console.log($('.lista1 li.exemplo2:even'))//seleciona os itens pares de uma seleçaõ
+		console.log($('.lista1 li.exemplo2:odd'))//seleciona os itens impares de uma seleção
+
+
+	</script>
+
+</html>
